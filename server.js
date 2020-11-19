@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
 app.get("/api/whoami", (req,res)=>{
   
    
-   let ipaddress = request.headers['x-forwarded-for']
+   let ipaddress = req.headers['x-forwarded-for']
    let language = req.headers["accept-language"];
    let software = req.headers["user-agent"]
 
