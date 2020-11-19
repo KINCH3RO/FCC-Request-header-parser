@@ -30,9 +30,9 @@ app.get("/api/whoami", (req,res)=>{
 
 
    res.json({
-    ipaddress:ipaddress,
-     language:language,
-     software:software
+    ipaddress,
+     language,
+     software,
    })
 })
 
